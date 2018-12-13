@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="container imageform">
+  <div class="jumbotron">
+
+    <form method="POST" enctype="multipart/form-data">
+
+      {% csrf_token %}
+      {%bootstrap_form form%}
+
+      <button type="submit" class="btn btn-primary">Compress</button>
+        </div>
+    </form>
+  </div>
+  </div>
+  <script>
+      $(function(){
+          $('form').on('submit', function(e){
+              $('body').append('<div id="loading">Loading...</div>')
+          });
+      })
+  </script>
+
+{% endblock %}

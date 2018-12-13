@@ -1,0 +1,18 @@
+
+{% include 'compress/result.html' %}
+
+<div class="col-lg-6 portfolio-item">
+  <div class="card h-100">
+    <img class="card-img-top" src="{{generated_compress_image.new_compressed_image.url}}" alt="{{generated_compress_image.new_compressed_image.name}}"></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        Compressed Image
+      </h4>
+      <p class="card-text">Image size : {{generated_compress_image.new_compressed_image.size|filesizeformat}}</p>
+        <i class="fas fa-eye fa-border"><a class="view" href="{{generated_compress_image.new_compressed_image.url}}">View</a></i>
+        <label> </label>
+        <i class="fa fa-download fa-border" aria-hidden="true"><a class="download" href="{%url 'compress:download' %}">Download</a></i>
+
+    </div>
+  </div>
+</div>

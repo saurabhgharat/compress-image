@@ -1,0 +1,100 @@
+body{
+  background: linear-gradient(to bottom,#0066ff  47%,#000066  100%);
+
+  background-attachment: fixed;
+  overflow: scroll;
+}
+.navbar-default{
+  background-color: black;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+.navbar-nav > li > a {
+          color: white !important;
+          text-indent: 8px;
+          font-weight: bold;
+}
+
+
+form{
+  text-align: center;
+}
+img {
+    position: relative;
+    -
+
+}
+label{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  white-space: pre;
+}
+.download,.view{
+
+  padding-left: 8px;
+  color: white;
+}
+.download:hover,.view:hover{
+  color: white;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.jumbotron{
+  margin-top: 20px;
+  background-color: white;
+}
+.card-body{
+  background-color: black;
+  color: white;
+}
+.card{
+  border:2px solid white;
+  border-radius: 20px 20px 20px 20px;
+}
+.card-img-top{
+  border-radius: 20px 20px 0 0;
+}
+.card-body{
+  border-radius: 0 0 20px 20px;
+}
+.fa-border{
+  border: 1px solid white !important;
+  border-radius: 5px !important;
+  padding: 8px !important;
+
+}
+.fa-border:hover{
+  color:white;background-color:#3c63f9;
+}
+a{
+  text-decoration: none !important;
+}
+.fa-download{
+  padding-left: 10px;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("/static/favicon/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand {
+    float:left;
+}
+h3 {
+    float:right;
+    color: red;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
